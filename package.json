@@ -1,0 +1,18 @@
+{
+  "name": "notify-server",
+  "version": "0.1.0",
+  "description": "notify demo service",
+  "main": "server.js",
+  "repository": "",
+  "author": "",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "node-gcm": "~0.9.8",
+    "mongoskin": "~0.6.1",
+    "connect-flash": "~0.1.1",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "vash" : "~0.7.6"
+  }
+}

@@ -1,0 +1,11 @@
+
+@{ page = 'home' }
+
+@html.extend('layout', function(model){
+
+    @html.block('content', function(model){
+        
+        <p>information about the service and how it works</p>
+    })
+
+})

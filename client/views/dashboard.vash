@@ -1,0 +1,35 @@
+
+@{ page = 'dashboard' }
+
+@html.extend('layout', function(model){
+
+    @html.block('scripts', function(model){
+        
+        <script type="text/javascript" src="js/dashboard.js"></script>
+    })
+
+    @html.block('content', function(model){
+        
+        <div class="dash-contant" data-bind="tabs: [
+            {
+                id: 'apps',
+                title: 'my apps',
+                view: 'views/dashboard/apps.html',
+                model: 'js/dashboard/apps.js'
+            },
+            {
+                id: 'devices',
+                title: 'devices',
+                view: 'views/dashboard/devices.html',
+                model: 'js/dashboard/devices.js'
+            },
+            {
+                id: 'knyx',
+                title: 'my pnyx',
+                view: 'views/dashboard/knyx.html',
+                model: 'js/dashboard/knyx.js'
+            },
+        ]" />
+    })
+
+})

@@ -1,0 +1,288 @@
+
+
+body {
+    background: url('/img/bg.jpg');
+    font-family: arial;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.brand img {
+    vertical-align: bottom;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.header {
+    background-color: rgb(0, 86, 134);
+    padding: 0 20px;
+    position: relative;
+}
+
+.login-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 20px;
+}
+
+#login-name {
+    color: rgb(223, 223, 223);
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    margin-top: -3px;
+    padding-left: 20px;
+    background-image: url('/img/user.png');
+    background-repeat: no-repeat;
+}
+
+.login-info > a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header img {
+    display: inline-block;
+    line-height: 90px;
+    vertical-align: middle;
+    width: 70px;
+    height: 30px;
+}
+
+.header p {
+    display: inline-block;
+    font-size: 32px;
+    color: white;
+    line-height: 90px;
+    vertical-align: middle;
+    margin: 0 0 0 15px;
+    font-weight: bold;
+}
+
+.header-links {
+    float: right;
+    line-height: 90px;
+    margin-top: 20px;
+}
+
+.header-links > a {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.selected-link {
+    color: rgb(235, 189, 73) !important;
+}
+
+.content {
+    background-color: white;
+    border-top: rgb(17, 139, 221) solid 10px;
+    padding-bottom: 80px;
+}
+
+.login-form h1 {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+
+.login-form h2 {
+    margin-top: 0;
+}
+
+.title-width-fix {
+    width: 300px;
+}
+
+.login-form form {
+    display: inline-block;
+    margin-left: 60px;
+    vertical-align: top;
+}
+
+.login-form form > div {
+    display: inline-block;
+}
+
+.login-form input {
+    margin-bottom: 15px;    
+}
+
+.login-form input,
+.login-form label {
+    display: block;
+}
+
+.login-form input[type="submit"] {
+    float: right;
+}
+
+.separator {
+    display: inline-block;
+    width: 1px;
+    background-color: rgb(17, 139, 221);
+    margin-left: 60px;
+}
+
+.tab-header {
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.tab-header li {
+    display: inline-block;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tab-header li.active {
+    border-bottom: rgb(17, 139, 221) 4px solid;
+}
+
+.tab-header li.hover {
+    border-bottom: rgb(226, 226, 226) 4px solid;
+}
+
+.dash-contant {
+    padding: 40px;
+}
+
+.device {
+    margin-bottom: 15px;    
+}
+
+.device img {
+    float: left;
+    margin-top: 5px;
+}
+
+.device-info {
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.device-info h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.device-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.device-id {
+    font-size: 12px;
+    color: gray;
+}
+
+table
+{
+	font-size: 12px;
+	background: #fff;
+	margin: 45px;
+	width: 480px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table th
+{
+	font-size: 14px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+
+table td
+{
+	color: #669;
+	padding: 9px 8px 0px 8px;
+}
+
+table tbody tr:hover td
+{
+	color: #009;
+}
+
+.flyout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    width: 420px;
+    height: 300px;
+    -moz-box-shadow: 0 0 5px 5px rgb(17, 139, 221);
+    -webkit-box-shadow: 0 0 5px 5px rgb(17, 139, 221);
+    box-shadow: 0 0 5px 5px rgb(17, 139, 221);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.flyout h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.flyout p {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.flyout input[type="text"] {
+    width: 350px;
+}
+
+.flyout textarea {
+    width: 350px;
+    height: 80px;
+    resize: none;
+}
+
+input[type="button"] {
+    padding: 8px 20px;
+    background-color: rgb(228, 228, 228);
+    color: rgb(104, 104, 104);
+    font-size: 16px;
+    border-width: 0;
+}
+
+input[type="button"].primary {
+    background-color: rgb(250, 179, 27);
+    color: white;
+}
+
+.buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+}
+
+.error {
+    font-size: 16px;
+    color: red;
+    background-color: silver;
+    border: black 1px solid;
+    padding: 5px 20px;
+}

@@ -1,0 +1,11 @@
+
+@{ page = 'download' }
+
+@html.extend('layout', function(model){
+
+    @html.block('content', function(model){
+        
+        <p>open this page on your device to download PnyxMe app</p>
+    })
+
+})

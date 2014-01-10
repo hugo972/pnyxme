@@ -1,0 +1,16 @@
+
+<div id="devices">
+    
+    <h1>List of your registered devices</h1>
+    <div data-bind="foreach: devices">
+        <div class="device">
+            <img src="img/device.png" />
+            <div class="device-info">
+                <h2 data-bind="text: name" />
+                <p data-bind="text: type" />
+                <p data-bind="text: id" />
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,36 @@
+<div id="apps">
+    
+    <div data-bind="flyout: newapp">
+        <!-- ko with: newapp -->
+        <h1>create new app</h1>
+        <p class="error" data-bind="text: error, visible: error" />
+        <p>name</p>
+        <input type="text" data-bind="value: name" />
+        <p>description</p>
+        <textarea data-bind="value: desc" />
+        <!-- /ko -->
+        <div class="buttons">
+            <input type="button" value="create" data-bind="click: addEnd" class="primary" />
+            <input type="button" value="cancel" data-bind="click: addCancel" />
+        </div>
+    </div>
+
+    <ul>
+        <li data-bind="click: add">new app</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <td>name</td>
+                <td>description</td>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: apps">
+            <tr>
+                <td data-bind="text: name" />
+                <td data-bind="text: desc" />
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

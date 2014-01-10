@@ -1,0 +1,9 @@
+
+# setting an alias to execute heroku command line tool
+alias hku='~/721196/heroku-client/bin/heroku'
+
+# how to see logs on the service
+hku logs --app pnyxme
+
+# how to restart a service
+hku restart --app pnyxme

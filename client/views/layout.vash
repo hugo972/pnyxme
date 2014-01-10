@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PnyxMe</title>
+        <link type="text/css" rel="stylesheet" href="css/layout.css" />
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/knockout-2.2.1.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/ux.js"></script>
+        @html.block('scripts')
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <img src="/img/logo.png" />
+                <p>PnyxMe</p>
+                <div class="header-links">
+                    <a class="@( page === 'home' ? 'selected-link' : '')" href="/">home</a>
+                    <a class="@( page === 'download' ? 'selected-link' : '')" href="/download">download</a>
+                    <a class="@( page === 'contact' ? 'selected-link' : '')" href="/contact">contact us</a>
+                    <a class="@( page === 'dashboard' ? 'selected-link' : '')" href="/dashboard">dashboard</a>
+                </div>
+                <div class="login-info">
+                    @if (model.user) {
+                        <p id="login-name">@model.user.name</p><a href="/logout">sign out</a>
+                    } else {
+                        <a href="/login">login</a>
+                    }
+                </div>
+            </div>
+            <div class="content">
+                @html.block('content')
+            </div>
+        </div>
+    </body>
+</html>
